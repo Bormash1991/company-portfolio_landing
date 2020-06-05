@@ -1,0 +1,56 @@
+.title {
+    color: #252525;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    &_section {
+        color: #f7f7f7;
+
+        font-size: 40px;
+        line-height: 28px;
+        flex: 1 0 auto;
+        margin: 0 8px;
+
+        &-black {
+            color: #656464;
+        }
+    }
+
+
+}
+
+@media(max-width:991px) {
+    .title {
+        font-size: 27px;
+        line-height: 20px;
+
+        &_about {
+            line-height: 40px;
+
+        }
+    }
+
+}
+
+@media(max-width: 767px) {
+    .title {
+        &_about {
+            font-size: 20px;
+        }
+    }
+}
+
+@media(max-width: 575px) {
+    .title {
+        &_section {
+            font-size: 18px;
+            line-height: 9px;
+        }
+
+        &_about {
+            font-size: 23px;
+        }
+    }
+}

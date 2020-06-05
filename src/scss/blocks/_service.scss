@@ -1,0 +1,116 @@
+.service {
+    background-color: #3d3d3d;
+
+    &__slider {
+        position: relative;
+    }
+
+    &__slider-item {
+        height: 554px;
+        background-color: #3d3d3d;
+        color: #f7f7f7;
+        text-align: center;
+        padding: 144px 15px 137px 15px;
+    }
+
+    &__slider-title {
+        margin-top: 55px;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 26px;
+        text-transform: uppercase;
+    }
+
+    &__slider-subtitle {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    &__slider-link {
+        display: block;
+        width: 143px;
+        height: 29px;
+        border-radius: 2px;
+        background-color: #959595;
+        margin: 0 auto;
+        margin-top: 29px;
+        color: #f7f7f7;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        text-transform: uppercase;
+        padding: 6px 0;
+
+        &:hover {
+            text-decoration: none;
+            color: #f7f7f7;
+        }
+    }
+
+    &__slider-item_active {
+        background-color: #097e89;
+    }
+
+    &__slider-control {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        width: 65px;
+        justify-content: space-between;
+    }
+
+    &__slider-prev,
+    &__slider-next {
+        width: 32px;
+        height: 32px;
+        background-color: #089eac;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media(max-width: 991px) {
+    .service {
+        &__slider {
+            &-item {
+                height: 500px;
+            }
+
+            &-title {
+                font-size: 20px;
+            }
+
+            &-subtitle {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .service {
+        &__slider {
+            &-item {
+                height: 445px;
+                padding: 30px 15px 0 15px;
+            }
+        }
+    }
+}
+
+@media(max-width: 575px) {
+    .service {
+        &__slider {
+            &-item {
+                height: 370px;
+                padding: 30px 15px 0 15px;
+            }
+        }
+    }
+}

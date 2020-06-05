@@ -1,0 +1,42 @@
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        border: 1px solid rgba($color: #ffffff, $alpha: 0.22);
+        border-radius: 100%;
+
+        &_footer {
+            background-color: #2e2e2e;
+            border: none;
+
+        }
+
+        img {
+            display: block;
+            height: 60%;
+        }
+    }
+
+    &_top {
+        width: 101px;
+    }
+
+    &_footer {
+        margin-top: 41px;
+    }
+}
+
+@media(max-width:991px) {
+
+    .social_top {
+        display: none;
+    }
+
+}

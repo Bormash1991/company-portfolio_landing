@@ -1,0 +1,24 @@
+.section__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #373737;
+    padding: 55px 48px;
+    align-items: flex-end;
+
+    &_white {
+        background-color: #fefefe;
+    }
+}
+
+@media(max-width: 767px) {
+    .section__header {
+        padding: 40px 35px;
+    }
+}
+
+@media(max-width: 575px) {
+    .section__header {
+        padding: 25px 20px;
+    }
+}

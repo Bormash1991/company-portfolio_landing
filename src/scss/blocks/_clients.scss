@@ -1,0 +1,128 @@
+.clients {
+    min-height: 532px;
+
+    .container {
+        padding: 0;
+    }
+
+    &__wrapper {
+        padding: 69px 37px 96px 37px;
+    }
+
+    &__item {
+        &-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            margin: 0 auto;
+
+
+            &-bottom {
+                margin-top: 111px;
+                padding: 0 59px 0 7px;
+            }
+        }
+
+        img {
+            display: block;
+            max-width: 183px;
+            height: 100%;
+        }
+    }
+}
+
+@media(max-width: 991px) {
+    .clients {
+        min-height: 450px;
+
+        &__wrapper {
+            padding: 20px 37px 50px 37px;
+        }
+
+        &__item {
+            height: 100%;
+
+            &-wrapper {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 90%;
+                margin: 0 auto;
+
+
+                &-bottom {
+                    margin-top: 80px;
+                    padding: 0 35px 0 7px;
+
+
+                }
+            }
+
+            img {
+                display: block;
+                max-width: 120px;
+
+            }
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .clients {
+        &__wrapper {
+            padding: 20px 37px 50px 37px;
+        }
+
+        &__item {
+            &-wrapper {
+                width: 60%;
+                display: grid;
+                grid-template-columns: 130px 130px;
+                grid-row-gap: 25px;
+
+                img {
+                    height: 60%;
+                    display: block;
+                    margin: 0 auto;
+                }
+
+                &-bottom {
+                    margin-top: 20px;
+                    padding: 0;
+
+
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 575px) {
+    .clients {
+        min-height: 350px;
+
+        &__wrapper {
+            padding: 20px 37px 20px 37px;
+        }
+
+        &__item {
+            height: 80%;
+
+            &-wrapper {
+                width: 100%;
+                grid-template-columns: 45% 45%;
+                grid-row-gap: 20px;
+
+
+                img {}
+
+                &-bottom {
+                    margin-top: 20px;
+
+
+                }
+            }
+        }
+    }
+}
