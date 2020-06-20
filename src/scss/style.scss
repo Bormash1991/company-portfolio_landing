@@ -1,65 +1,63 @@
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap ');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css');
-@import './blocks/header';
-@import './blocks/menu';
-@import './blocks/social';
-@import './blocks/promo';
-@import './blocks//overlay';
-@import './blocks/about';
-@import './blocks/title';
-@import './blocks/line';
-@import './blocks/service';
-@import './blocks//sectionHeader';
-@import './blocks/feedback';
-@import './blocks/clients';
-@import './blocks/question';
-@import './blocks/btn';
-@import './blocks/footer';
-@import './blocks/modal';
-
+@import "../../node_modules/bootstrap/scss/bootstrap-grid.scss";
+@import "./blocks/header";
+@import "./blocks/menu";
+@import "./blocks/social";
+@import "./blocks/promo";
+@import "./blocks//overlay";
+@import "./blocks/about";
+@import "./blocks/title";
+@import "./blocks/line";
+@import "./blocks/service";
+@import "./blocks//sectionHeader";
+@import "./blocks/feedback";
+@import "./blocks/clients";
+@import "./blocks/question";
+@import "./blocks/btn";
+@import "./blocks/footer";
+@import "./blocks/modal";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap ");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css");
 
 * {
-    font-family: 'Roboto', sans-serif;
-
+	font-family: "Roboto", sans-serif;
 }
 
 a {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 body {
-    position: relative;
+	position: relative;
 }
 
 .overlay {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    background-color: rgba($color: #000000, $alpha: 0.8);
-    display: none;
-    z-index: 3;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	background-color: rgba($color: #000000, $alpha: 0.8);
+	display: none;
+	z-index: 3;
 }
 
 .show {
-    display: block;
+	display: block;
 }
 
 .hide {
-    display: none;
+	display: none;
 }
 
 .fade {
-    animation-name: fade;
-    animation-duration: 1.2s;
+	animation-name: fade;
+	animation-duration: 1.2s;
 }
 
 @keyframes fade {
-    from {
-        opacity: 0.1;
-    }
+	from {
+		opacity: 0.1;
+	}
 
-    to {
-        opacity: 1;
-    }
+	to {
+		opacity: 1;
+	}
 }
