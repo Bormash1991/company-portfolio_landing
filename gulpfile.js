@@ -6,6 +6,7 @@ const cleanCSS = require("gulp-clean-css");
 const postcss = require("gulp-postcss");
 const browsersync = require("browser-sync");
 const imagemin = require("gulp-imagemin");
+const webp = require("gulp-webp");
 
 const dist = "./dist";
 
@@ -97,16 +98,17 @@ gulp.task("prod", () => {
 	gulp.src("./src/index.html").pipe(gulp.dest(dist));
 	gulp
 		.src("./src/img/**/*.*")
-		.pipe(
-			imagemin([
-				imagemin.gifsicle({ interlaced: true }),
-				imagemin.mozjpeg({ quality: 75, progressive: true }),
-				imagemin.optipng({ optimizationLevel: 5 }),
-				imagemin.svgo({
-					plugins: [{ removeViewBox: true }, { cleanupIDs: false }],
-				}),
-			])
-		)
+		.pipe(webp())
+		// .pipe(
+		// 	imagemin([
+		// 		imagemin.gifsicle({ interlaced: true }),
+		// 		imagemin.mozjpeg({ quality: 75, progressive: true }),
+		// 		imagemin.optipng({ optimizationLevel: 5 }),
+		// 		imagemin.svgo({
+		// 			plugins: [{ removeViewBox: true }, { cleanupIDs: false }],
+		// 		}),
+		// 	])
+		// )
 		.pipe(gulp.dest(dist + "/img"));
 	gulp.src("./src/icons/**/*.*").pipe(gulp.dest(dist + "/icons"));
 
